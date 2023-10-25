@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores con Inputs</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .container{
+            width: 300px;
+            height: 250px;
+            border-radius: 10px;
+            background-color: cadetblue;
+            box-shadow: 15px 15px 15px #000;
+            text-align: center;
+        }
+        button {
+                width: 60%;
+                padding: 10px;
+                border: none;
+                border-radius: 65px;
+                font-weight: bold;
+                background: plum;
+                color: black;
+                margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Colores con Inputs</h1>
+        <h2>Arrastra y Aplica</h2>
+        <input type="range" name="" id="red" value="0">
+        <br>
+        <input type="range" name="" id="green" value="0">
+        <br>
+        <input type="range" name="" id="blue" value="0">
+        <br>
+        <input type="range" name="" id="transparent" value="100">
+        <button onclick="setColor()">Set Color</button>
+    </div>
+    <script src="./coloresinput.js"></script>
+</body>
+</html>
